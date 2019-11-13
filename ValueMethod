@@ -43,6 +43,7 @@
 		}
 	}
 	
+	//I took the linearSearch method from the book and made a couple adjustments so that it searches the first row of a 2 dimensional array
 	public static int linearSearch (int[][] list, int key) {
 		for (int i = 0; i < list[0].length; i++) {
 			if (key == list[0][i])
