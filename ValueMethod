@@ -1,0 +1,52 @@
+//The words need to be changed but the method works. We need to change it so that we have one of these methods for each card rating,
+//select the correct method from our switch statement, and accept the user input as int "date" in our method peramerters
+//do we output void so that we can output print statements, or do we have the method output another data type and take care of the print statements in a different method??
+
+	//this will be changed to a method that will not have an input, but rather will accept the inputs collected in the main (or previous method)
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner (System.in);
+		int date = input.nextInt();
+		input.close();
+		
+		int [] [] HONUSWAGNEREXAMPLE = {
+				{1980, 2004, 2005, 2008, 2009, 2010, 2040},
+				{20000, 109638, 132000, 317250, 400000, 262000, 500000},
+		};
+		
+		if (date < 1909) {
+			System.out.println("The card did not exist");
+		}
+		else if (date >= 1909 && date <= 1911) {
+			System.out.println("The card was sold with cigerette boxes until Wagner said NO MORE in 1911");
+		}
+		else if (date > 1911 && date < 1985) {
+			System.out.println("Nobody really cared about the card until 1985");
+		}
+		else {
+			int x = linearSearch(HONUSWAGNEREXAMPLE, date);
+			//this is just here to see what's going on, needs to be removed for project
+			System.out.println(x);
+		
+		
+			if (x == -1) {
+			// input var date into lobf equation and return result as an int
+			double value = 43.72*date+3000.9828;
+			//just a test equation... I know it doesn't make a ton of sense
+			System.out.println(value);
+			
+			}
+			else {
+			System.out.println(HONUSWAGNEREXAMPLE[1][x]);
+			//when this is a method instead of main, just have the method return the indexed variable as an int
+			}
+		}
+	}
+	
+	public static int linearSearch (int[][] list, int key) {
+		for (int i = 0; i < list[0].length; i++) {
+			if (key == list[0][i])
+				return i;
+		}
+		return -1;
+	}
