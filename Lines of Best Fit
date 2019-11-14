@@ -21,5 +21,6 @@ This here is a switch statement holding the various
 		default://Default used for 4+ because anything higher than 3 uses same equation
 			//y = 93216.278094x + -185195085.882421
 			//Quadratic instead?
+						//4541309277 - 5000000 * x + 1200 * Math(x, 2);
 			break;
 		}
