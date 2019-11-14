@@ -1,0 +1,17 @@
+		switch (userQuality) {
+		case 0:
+			break;
+		case 1:
+			findValue.findCardValuePoor(userYear);
+			break;
+		case 2:
+			findValue.findCardValueGood(userYear);
+			break;
+		case 3:
+			findValue.findCardValueVeryGood(userYear);
+			break;
+		default:
+			findValue.findCardValueExcellent(userYear);
+			break;
+		}
+		
