@@ -1,0 +1,55 @@
+//import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class HonusMain {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); //Establishes a scanner to get info on user's card
+		int userQuality = 0, userYear; //userEstimate; //Stores information on the user's case
+		
+		//Greet the user and request the quality of their card
+		System.out.println("Welcome to the Honus Wagner Card Currency Calculator!\n" +
+				"I am Honus Wagner Card Man, a highly sophistic algorithm designed to help you estimate the value " +
+				"of your T206 Honus Wagner cards!\n");
+		System.out.println("Please enter the quality of your T206 Honus Wagner card:\n"
+				+ "(1- Poor to Fair, 2- Good, 3- Very Good, 4+- Anything Better)");
+		
+		userQuality = input.nextInt(); //Store quality
+		while (userQuality < 1) //Ask until given an acceptable input
+		{
+			System.out.println("Please enter a positive integer.");
+			userQuality = input.nextInt(); //Store quality
+		}
+		System.out.println();
+		
+		//Ask for the year they're selling the card
+		System.out.println("Please enter the year in which you would like to sell your T206 Honus Wagner card:");
+		userYear = input.nextInt(); //Store year of sale
+		
+		
+		//Put out a price based on what the user put in
+		switch (userQuality)
+		{
+		case 0:
+			break;
+		case 1:
+			findValue.findCardValuePoor(userYear);
+			break;
+		case 2:
+			findValue.findCardValueGood(userYear);
+			break;
+		case 3:
+			findValue.findCardValueVeryGood(userYear);
+			break;
+		default:
+			findValue.findCardValueExcellent(userYear);
+			break;
+		}
+		
+		
+		input.close();
+		
+	}
+
+}
