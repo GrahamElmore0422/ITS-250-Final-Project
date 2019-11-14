@@ -1,0 +1,44 @@
+public class HonusCard {
+
+	int quality;
+	
+	public HonusCard(int rating) {
+		
+		this.quality = rating;
+		
+		/*int[][] salesHistory
+		 * 
+		 * HonusCard poor = new HonusCard
+		 * 
+		 */
+				
+	}
+	
+	public long Estimate()
+	{
+		switch (this.quality)
+		{
+		case 0:
+			break;
+		case 1:
+			//y = 39782.029850x + -79606312.714205
+			break;
+		case 2:
+			//y = 53788.861314x + -107575554.907543
+			break;
+		case 3:
+			//y = 106067.567562x + -212203364.854193
+			break;
+		default://Default used for 4+ because anything higher than 3 uses same equation
+			//y = 93216.278094x + -185195085.882421
+			//Quadratic instead?
+			
+			//4541309277 - 5000000 * x + 1200 * Math(x, 2);
+			
+			break;
+			
+		}
+		return quality;
+	}
+	
+}
