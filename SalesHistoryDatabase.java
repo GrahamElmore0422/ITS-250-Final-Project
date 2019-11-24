@@ -47,4 +47,5 @@ public class SalesHistoryDatabase {
 		return (int)e;
 
 	}
+	
 }
