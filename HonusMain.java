@@ -4,7 +4,6 @@
 
 package finalProject;
 
-//import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class HonusMain {
@@ -15,7 +14,7 @@ public class HonusMain {
 		HonusCard user = new HonusCard(); //Stores the user's information
 
 		//Greet the user and request the quality of their card
-		System.out.println("Welcome to the Honus Wagner Card Currency Calculator!\n" +
+		System.out.println("Welcome to the Honus Wagner Card Value Calculator!\n" +
 				"I am Honus Wagner Card Man, a highly sophistic algorithm designed to help you estimate the value " +
 				"of your T206 Honus Wagner cards!\n");
 		System.out.print("Please enter the quality of your T206 Honus Wagner card\n"
